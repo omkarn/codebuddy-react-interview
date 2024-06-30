@@ -25,7 +25,6 @@ function getQueryParams(url) {
 const handlers = [
   http.post(`${API_URL}/submit`, async ({ request }) => {
     const body = await request.json();
-    console.log(body);
 
     return HttpResponse.json(
       {
